@@ -41,8 +41,6 @@ export class InMemoryQuestionsRepository implements QuestionsRepository {
     this.items.push(question)
 
     DomainEvents.dispatchEventsForAggregate(question.id)
-
-    return question
   }
 
   async save(question: Question) {
@@ -51,8 +49,6 @@ export class InMemoryQuestionsRepository implements QuestionsRepository {
     this.items[itemIndex] = question
 
     DomainEvents.dispatchEventsForAggregate(question.id)
-
-    return question
   }
 
   async delete(question: Question) {

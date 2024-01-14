@@ -25,8 +25,6 @@ export class InMemoryQuestionCommentsRepository
 
   async create(questionComment: QuestionComment) {
     this.items.push(questionComment)
-
-    return questionComment
   }
 
   async delete(questionComment: QuestionComment) {
