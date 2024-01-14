@@ -1,7 +1,7 @@
 import { Either, left, right } from '@/core/either'
 import { Injectable } from '@nestjs/common'
 import { Student } from '../../enterprise/entities/student'
-import { StudentAlreadyExistsError } from './errors/student-already-exists-error'
+import { StudentAlreadyExistsError } from '@/domain/forum/application/use-cases/errors/student-already-exists-error'
 import { StudentsRepository } from '@/domain/forum/application/repositories/students-repository'
 import { HashGenerator } from '@/domain/forum/application/cryptography/hash-generator'
 

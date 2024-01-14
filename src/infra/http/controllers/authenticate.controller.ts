@@ -9,7 +9,7 @@ import {
 import { z } from 'zod'
 import { ZodValidationPipe } from '@/infra/http/pipes/zod-validation'
 import { AuthenticateStudentUseCase } from '@/domain/forum/enterprise/entities/authenticate-student'
-import { WrongCredentialsError } from '@/domain/forum/enterprise/entities/errors/wrong-credentials-error'
+import { WrongCredentialsError } from '@/domain/forum/application/use-cases/errors/wrong-credentials-error'
 import { Public } from '@/infra/auth/public'
 
 const authenticateBodySchema = z.object({
