@@ -9,7 +9,7 @@ export interface QuestionCommentsRepository {
     params: PaginationParams,
   ): Promise<QuestionComment[]>
 
-  create(questionComment: QuestionComment): Promise<QuestionComment>
+  create(questionComment: QuestionComment): Promise<void>
 
   delete(questionComment: QuestionComment): Promise<void>
 }

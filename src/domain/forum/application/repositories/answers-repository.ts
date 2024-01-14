@@ -9,9 +9,9 @@ export interface AnswersRepository {
     params: PaginationParams,
   ): Promise<Answer[]>
 
-  create(answer: Answer): Promise<Answer>
+  create(answer: Answer): Promise<void>
 
-  save(answer: Answer): Promise<Answer>
+  save(answer: Answer): Promise<void>
 
   delete(answer: Answer): Promise<void>
 }
