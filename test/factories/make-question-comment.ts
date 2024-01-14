@@ -8,7 +8,7 @@ import {
 } from '@/domain/forum/enterprise/entities/question-comment'
 import { PrismaService } from '@/infra/db/prisma/prisma.service'
 import { Injectable } from '@nestjs/common'
-import { PrismaQuestionCommentMapper } from '@/infra/db/mappers/prisma-question-comment-mapper'
+import { PrismaQuestionCommentMapper } from '@/infra/db/prisma/mappers/prisma-question-comment-mapper'
 
 export function makeQuestionComment(
   override: Partial<QuestionCommentProps> = {},

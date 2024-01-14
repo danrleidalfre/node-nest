@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common'
 import { AttachmentsRepository } from '@/domain/forum/application/repositories/attachments-repository'
 import { Attachment } from '@/domain/forum/enterprise/entities/attachment'
 import { PrismaService } from '@/infra/db/prisma/prisma.service'
-import { PrismaAttachmentMapper } from '@/infra/db/mappers/prisma-attachment-mapper'
+import { PrismaAttachmentMapper } from '@/infra/db/prisma/mappers/prisma-attachment-mapper'
 
 @Injectable()
 export class PrismaAttachmentsRepository implements AttachmentsRepository {

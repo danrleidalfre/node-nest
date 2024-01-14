@@ -7,7 +7,7 @@ import {
 } from '@/domain/forum/enterprise/entities/student'
 import { Injectable } from '@nestjs/common'
 import { PrismaService } from '@/infra/db/prisma/prisma.service'
-import { PrismaStudentMapper } from '@/infra/db/mappers/prisma-student-mapper'
+import { PrismaStudentMapper } from '@/infra/db/prisma/mappers/prisma-student-mapper'
 
 export function makeStudent(
   override: Partial<StudentProps> = {},

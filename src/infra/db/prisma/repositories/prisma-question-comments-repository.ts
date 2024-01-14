@@ -3,7 +3,7 @@ import { QuestionCommentsRepository } from '@/domain/forum/application/repositor
 import { QuestionComment } from '@/domain/forum/enterprise/entities/question-comment'
 import { Injectable } from '@nestjs/common'
 import { PrismaService } from '@/infra/db/prisma/prisma.service'
-import { PrismaQuestionCommentMapper } from '@/infra/db/mappers/prisma-question-comment-mapper'
+import { PrismaQuestionCommentMapper } from '@/infra/db/prisma/mappers/prisma-question-comment-mapper'
 
 @Injectable()
 export class PrismaQuestionCommentsRepository

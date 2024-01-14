@@ -3,7 +3,7 @@ import { UniqueEntityId } from '@/core/entities/unique-entity-id'
 import { faker } from '@faker-js/faker'
 import { Injectable } from '@nestjs/common'
 import { PrismaService } from '@/infra/db/prisma/prisma.service'
-import { PrismaAnswerMapper } from '@/infra/db/mappers/prisma-answer-mapper'
+import { PrismaAnswerMapper } from '@/infra/db/prisma/mappers/prisma-answer-mapper'
 
 export function makeAnswer(
   override: Partial<AnswerProps> = {},
