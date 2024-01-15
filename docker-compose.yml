@@ -10,3 +10,9 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: docker
       POSTGRES_DATABASE: node-nest
+
+  cache:
+    container_name: node-nest-redis
+    image: redis
+    ports:
+      - "6379:6379"
